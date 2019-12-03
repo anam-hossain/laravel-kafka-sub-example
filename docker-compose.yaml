@@ -21,7 +21,7 @@ services:
     ports:
       - 8788:80
     depends_on:
-      - php_kafka
+      - kafka_consumer_php
     networks:
       - default
       - proxynet
