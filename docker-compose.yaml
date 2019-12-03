@@ -6,7 +6,7 @@ services:
       - ./:/var/www/
     environment:
       DB_CONNECTION: mysql
-      DB_HOST: mysql_db
+      DB_HOST: kafka_consumer_mysql_db
       DB_PORT: 3306
       KAFKA_BROKERS: kafka:9092
     networks:
@@ -17,7 +17,7 @@ services:
     image: anamhossain/php-nginx:latest
     environment:
       NGINX_ROOT: "/var/www/public"
-      NGINX_FPM_HOST: php_kafka
+      NGINX_FPM_HOST: kafka_consumer_php
     ports:
       - 8788:80
     depends_on:
