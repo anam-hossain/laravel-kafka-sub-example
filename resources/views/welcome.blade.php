@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Microservice 2 (Sub)
                 </div>
 
                 <div class="links">
